@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">    
+    <title>index</title>
+    <script type="module" crossorigin src="/task8/assets/main-BKNCHGr7.js"></script>
+    <link rel="stylesheet" crossorigin href="/task8/assets/main-CHe8KI81.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-white py-4 py-lg-5 fixed-top">
+  <div class="container position-relative">
+    <div class="d-flex align-items-center me-auto">
+        <a class="navbar-brand p-0 me-lg-7 me-auto" href="index">
+            <img src="data:image/png;base64,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" alt="logo">
+        </a>
+        <form class="position-relative d-none d-lg-block">
+            <span class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60">search</span>
+            <input type="search" class="form-control rounded-1 py-3 ps-11 navbar-lg-search" id="navbar-lg-search" placeholder="搜尋景點、地點或城市">          
+        </form>  
+    </div>
+  
+    <div class="position-absolute z-1 start-0 end-0 px-4 bg-white"> <!-- start-0 end-0 為了滿版寬度-->
+        <div class="collapse" id="collapseExample">
+            <div class="d-flex">
+                <form class="position-relative w-100">
+                    <span class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60">search</span>
+                    <input type="search" class="form-control rounded-1 py-3 ps-11" id="exampleFormControlInput1" placeholder="搜尋景點、地點或城市">          
+                </form>
+                <button type="button" class="btn p-2 border-0" data-bs-toggle="collapse" data-bs-target="#collapseExample">
+                    <span class="material-icons-outlined align-bottom">close</span>
+                </button>              
+            </div>
+        </div>  
+    </div>
+  
+    <button type="button" class="btn border-0 p-2 d-lg-none" data-bs-toggle="collapse" data-bs-target="#collapseExample">
+        <span class="material-icons-outlined align-bottom">search</span>
+    </button>
+    <a href="#" class="btn border-0 py-2 me-lg-2">
+        <span class="position-relative">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-alert cart-tag p-0">
+                2
+            </span>        
+            <span class="material-icons-outlined align-bottom">local_grocery_store</span>
+        </span>
+    </a>
+    <button type="button" class="btn btn-primary-100 py-5 px-lg-9 d-none d-lg-block">登入 / 註冊 </button>
+
+    <button class="btn border-0 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="material-icons-outlined d-lg-none align-bottom">menu</span>
+    </button>
+    <div class="offcanvas offcanvas-end p-7" tabindex="-1" id="offcanvasNavbar" aria-labelledby="account">
+      <div class="offcanvas-header p-0 mb-7">
+        <div class="d-flex flex-column w-100">
+            <div class="align-self-end">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>           
+            </div>
+            <div class="d-flex align-items-center pb-5 border-bottom">
+                <span class="material-icons-outlined text-white rounded-circle bg-primary-40 account text-center me-2" id="account">account_circle</span>
+                <div>
+                    <p class="text-primary-100 fw-bold mb-0">訪客</p>
+                    <p class="text-neutral-80 mb-0">未登入</p>                 
+                </div>
+            </div>               
+        </div>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="d-flex flex-column h-100">
+            <h6 class="fw-bold text-primary-100">歡迎來到 ZOBAA</h6>
+            <p class="text-neutral-80">加入會員即可立即訂購、收藏行程，並享相關優惠好禮。</p>
+            <button type="button" class="btn btn-primary-100 py-5 w-100 mt-auto">登入 / 註冊 </button>                      
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+    <main>
+      <section class="banner">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <h6 class="text-title fw-bold text-primary bg-primary-10 p-2 rounded-1 d-inline-block mb-4">ZOBAA 旅行推薦平台</h6>
+              <h1 class="travel-title fw-bold text-primary mb-2 mb-lg-7">
+                <span class="d-block d-lg-inline">用旅行，</span>
+                <span>收藏世界的樣子</span>
+              </h1>
+              <p class="text-subtitle fw-bold text-primary-80 mb-7 mb-lg-11">ZOBAA 整合熱門景點推薦、即時優惠、獨家行程，從比價到訂購，一次完成你的完美出遊計畫。</p>
+              <form class="position-relative">
+                <span class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60">search</span>
+                <input type="search" class="form-control rounded-1 py-6 ps-11 banner-searchBar" id="exampleFormControlInput1" placeholder="搜尋景點、地點或城市">
+                <button type="button" class="btn btn-primary-100 py-4 px-5 position-absolute top-50 end-0 translate-middle-y me-2">開始探索旅程
+                </button>              
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recommend py-11 py-lg-16">
+        <div class="container d-lg-flex justify-content-lg-between align-items-lg-center text-white text-subtitle mb-11 mb-lg-15">
+          <h3 class="fw-bold mb-7">
+            你的<br>專屬推薦
+          </h3>
+          <div>
+            <p class="mb-4">
+              來看我們的精選推薦行程，滿意度高達 99.2%<br>給自己一個難忘的旅遊行程吧！
+            </p>
+            <a href="#" class="text-white">查看全部行程</a>            
+          </div>
+        </div>
+        <div class="container d-flex gap-5 overflow-x-auto">
+          <div class="card bg-dark text-white rounded-5 overflow-hidden flex-shrink-0 flex-lg-shrink-1">
+            <img src="/task8/assets/recommend-AEVYMS0e.png" class="card-img h-100" alt="巴里島">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h2 class="card-title mb-2">峇里島渡假漫遊</h2>
+              <p class="mb-7">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+              <button type="button" class="btn btn-light fw-bold py-6 rounded-pill d-flex justify-content-between">
+                訂購行程
+                <span class="material-icons-outlined align-bottom">
+                  arrow_forward
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="card bg-dark text-white rounded-5 overflow-hidden flex-shrink-0 flex-lg-shrink-1">
+            <img src="/task8/assets/recommend-1-MiFxTgld.png" class="card-img h-100" alt="日本">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h2 class="card-title mb-2">日本深度賞櫻計畫</h2>
+              <p class="mb-7">春季限定，東京、京都、大阪賞櫻之旅，體驗日本文化的精髓。</p>
+              <button type="button" class="btn btn-light fw-bold py-6 rounded-pill d-flex justify-content-between">
+                訂購行程
+                <span class="material-icons-outlined align-bottom">
+                  arrow_forward
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="card bg-dark text-white rounded-5 overflow-hidden flex-shrink-0 flex-lg-shrink-1">
+            <img src="/task8/assets/recommend-2-uCpk4jBm.png" class="card-img h-100" alt="紐西蘭">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h2 class="card-title mb-2">紐西蘭雪山探險</h2>
+              <p class="mb-7">探索南島壯麗的自然風光，體驗各種極限運動和戶外活動。</p>
+              <button type="button" class="btn btn-light fw-bold py-6 rounded-pill d-flex justify-content-between">
+                訂購行程
+                <span class="material-icons-outlined align-bottom">
+                  arrow_forward
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="card bg-dark text-white rounded-5 overflow-hidden flex-shrink-0 flex-lg-shrink-1">
+            <img src="/task8/assets/recommend-3-CNyn9TC1.png" class="card-img h-100" alt="摩洛哥">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h2 class="card-title mb-2">摩洛哥迷幻之旅</h2>
+              <p class="mb-7">探索千年文化與色彩繽紛的市集風情</p>
+              <button type="button" class="btn btn-light fw-bold py-6 rounded-pill d-flex justify-content-between">
+                訂購行程
+                <span class="material-icons-outlined align-bottom">
+                  arrow_forward
+                </span>
+              </button>
+            </div>
+          </div>         
+        </div>
+      </section>
+      <section class="container py-11 py-lg-16">
+        <div class="row flex-lg-row-reverse justify-content-lg-between align-items-lg-center">
+          <div class="col-lg-4 mb-11 d-flex justify-content-lg-end">
+            <div>
+              <h3 class="text-primary fw-bold mb-7">
+                ZOBAA!<br>
+                踏上旅程的<br>
+                第一站
+              </h3>
+              <p class="text-primary-60">
+                探索最熱門的旅遊主題，<br>
+                從旅人必備攻略到獨家優惠，<br>
+                全都為你精挑細選。
+              </p>              
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card mb-5">
+                  <img src="/task8/assets/intro-1-BjE3o7NZ.png" class="card-img-top" alt="推薦行程pic">
+                  <div class="card-body">
+                    <h6 clas="fw-bold">ZOBAA 專屬推薦行程</h6>
+                    <p class="text-neutral-80">嚴選深度行程，豐富旅行靈感</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card mb-5">
+                  <img src="/task8/assets/intro-2-Cuy_oOTQ.png" class="card-img-top" alt="旅人攻略pic">
+                  <div class="card-body">
+                    <h6 clas="fw-bold">旅人攻略集合</h6>
+                    <p class="text-neutral-80">景點、交通、私房景點一次掌握</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row offset-row">
+              <div class="col-lg-6">
+                <div class="card mb-5">
+                  <img src="/task8/assets/intro-3-BOaJZxZ5.png" class="card-img-top" alt="優惠機票、酒店pic">
+                  <div class="card-body">
+                    <h6 clas="fw-bold">優惠機票、酒店</h6>
+                    <p class="text-neutral-80">即時比價，聰明出發不踩雷</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card mb-5">
+                  <img src="/task8/assets/intro-4-BtzNLPn_.png" class="card-img-top" alt="銀行專屬優惠pic">
+                  <div class="card-body">
+                    <h6 clas="fw-bold">銀行專屬優惠</h6>
+                    <p class="text-neutral-80">使用指定卡別享受獨家旅遊好康</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 旅行靈感地圖 -->
+      <section class="container py-11 py-lg-16 bg-primary-10">
+        <div class="d-lg-flex justify-content-lg-between align-items-lg-center">
+          <div>
+            <h3 class="fs-4 fs-lg-1 fw-bold text-primary mb-7">
+              <span class="mb-2">今年旅行的<br></span>
+              靈感地圖
+            </h3>
+            <div class="gap-2 fw-bold mb-7 mb-lg-0 d-flex overflow-x-auto">
+              <button type="button" class="btn btn-primary text-white py-2 px-5 flex-shrink-0">全部</button>
+              <button type="button" class="btn btn-light text-primary py-2 px-5 flex-shrink-0">亞洲</button>
+              <button type="button" class="btn btn-light text-primary py-2 px-5 flex-shrink-0">歐洲</button>
+              <button type="button" class="btn btn-light text-primary py-2 px-5 flex-shrink-0">美洲</button>
+              <button type="button" class="btn btn-light text-primary py-2 px-5 flex-shrink-0">大洋洲</button>
+              <button type="button" class="btn btn-light text-primary py-2 px-5 flex-shrink-0">非洲</button>
+            </div>
+          </div>
+          <div class="d-lg-flex flex-column justify-content-lg-end">
+              <P class="mb-0 mb-lg-2">來自旅人搜尋、收藏與討論最多的目的地排行榜，</P>
+              <P class="mb-0 mb-lg-7">一場風格與故事感兼具的靈感旅行，就從這裡開始。</P>           
+            <div class="d-none d-lg-flex justify-content-end gap-2">
+              <button type="button" class="btn btn-light text-primary py-2 px-5">
+                <span class="material-icons-outlined align-bottom">arrow_back</span>
+              </button>
+              <button type="button" class="btn btn-light text-primary py-2 px-5">
+                <span class="material-icons-outlined align-bottom">arrow_forward</span>
+              </button>
+            </div>
+          </div>          
+        </div>
+        <div class="row overflow-x-auto">
+          <div class="col-lg-7 map d-flex gap-5 gap-lg-7">
+            <div class="card rounded-5 bg-white flex-shrink-0">
+              <div class="d-lg-flex justify-content-lg-between">
+                <div>                  
+                  <img class="rounded-5 px-5 pt-5 pb-2 pb-lg-5" src="/task8/assets/map-1-CaWFbhxG.png" alt="map1">                                    
+                </div>
+                <div class="card-body pt-0 py-lg-5">
+                  <div class="mb-2">
+                    <button type="button" class="btn btn-primary-10 fw-bold text-primary py-2 px-5 me-2">亞洲</button>
+                    <button type="button" class="btn btn-primary-10 fw-bold text-primary py-2 px-5">日本京都</button>                  
+                  </div>
+                  <h3 class="fs-4 fs-lg-2 fw-bold">走進四季交織的文化時光</h3>                
+                  <p class="text-neutral-80 mb-7">穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。</p>
+                  <button type="button" class="btn btn-primary-10 fw-bold text-primary py-2 px-5 mb-2">ZOBAA 建議</button>
+                  <p>賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁</p>              
+                  <button type="button" class="btn btn-dark fw-bold py-6 px-5 mb-lg-0 rounded-pill w-100 d-flex justify-content-between">
+                    立即探索魅力古都
+                    <span class="material-icons-outlined align-bottom bg-white rounded-circle text-black">arrow_forward</span>
+                  </button>
+                </div>                
+              </div>
+            </div>
+            <div class="card rounded-5 bg-white flex-shrink-0">
+              <div class="d-lg-flex justify-content-lg-between">
+                <div>                  
+                  <img class="rounded-5 px-5 pt-5 pb-2 pb-lg-5" src="/task8/assets/map-2-CindXB3l.png" alt="map1">                                    
+                </div>
+                <div class="card-body pt-0 py-lg-5">
+                  <div class="mb-2">
+                    <button type="button" class="btn btn-primary-10 fw-bold text-primary py-2 px-5 me-2">亞洲</button>
+                    <button type="button" class="btn btn-primary-10 fw-bold text-primary py-2 px-5">南韓首爾</button>                  
+                  </div>
+                  <h3 class="fs-4 fs-lg-2 fw-bold">從街邊美食到韓劇場景</h3>                
+                  <p class="text-neutral-80 mb-7">白天在弘大小巷探店，夜晚登上南山塔俯瞰整座城市的閃爍。</p>
+                  <button type="button" class="btn btn-primary-10 fw-bold text-primary py-2 px-5 mb-2">ZOBAA 建議</button>
+                  <p>弘大周邊週五傍晚最熱鬧，小吃與街頭藝人齊發✨</p>              
+                  <button type="button" class="btn btn-dark fw-bold py-6 px-5 mb-lg-0 rounded-pill w-100 d-flex justify-content-between">
+                    感受韓系風格日常
+                    <span class="material-icons-outlined align-bottom bg-white rounded-circle text-black">arrow_forward</span>
+                  </button>
+                </div>                
+              </div>
+            </div>
+            <div class="card rounded-5 bg-white flex-shrink-0">
+              <div class="d-lg-flex justify-content-lg-between">
+                <div>                  
+                  <img class="rounded-5 px-5 pt-5 pb-2 pb-lg-5" src="/task8/assets/map-3-VKVUHlE9.png" alt="map1">                                    
+                </div>
+                <div class="card-body pt-0 py-lg-5">
+                  <div class="mb-2">
+                    <button type="button" class="btn btn-primary-10 fw-bold text-primary py-2 px-5 me-2">歐洲</button>
+                    <button type="button" class="btn btn-primary-10 fw-bold text-primary py-2 px-5">法國巴黎</button>                  
+                  </div>
+                  <h3 class="fs-4 fs-lg-2 fw-bold">在藝術與咖啡香中迷路</h3>                
+                  <p class="text-neutral-80 mb-7">穿梭左岸書店與畫廊，任由麵包香與建築細節擁抱你的步伐。</p>
+                  <button type="button" class="btn btn-primary-10 fw-bold text-primary py-2 px-5 mb-2">ZOBAA 建議</button>
+                  <p>走進瑪黑區，最容易與巴黎風格不期而遇 ☕️</p>              
+                  <button type="button" class="btn btn-dark fw-bold py-6 px-5 mb-lg-0 rounded-pill w-100 d-flex justify-content-between">
+                    開啟我的巴黎報險
+                    <span class="material-icons-outlined align-bottom bg-white rounded-circle text-black">arrow_forward</span>
+                  </button>
+                </div>                
+              </div>
+            </div>
+            <div class="card rounded-5 bg-white flex-shrink-0">
+              <div class="d-lg-flex justify-content-lg-between">
+                <div>                  
+                  <img class="rounded-5 px-5 pt-5 pb-2 pb-lg-5" src="/task8/assets/map-4-DT9nHMWV.png" alt="map1">                                    
+                </div>
+                <div class="card-body pt-0 py-lg-5">
+                  <div class="mb-2">
+                    <button type="button" class="btn btn-primary-10 fw-bold text-primary py-2 px-5 me-2">大洋洲</button>
+                    <button type="button" class="btn btn-primary-10 fw-bold text-primary py-2 px-5">澳洲雪梨</button>                  
+                  </div>
+                  <h3 class="fs-4 fs-lg-2 fw-bold">城市與大自然的交會</h3>                
+                  <p class="text-neutral-80 mb-7">享受城市的節奏與野性的呼喚</p>
+                  <button type="button" class="btn btn-primary-10 fw-bold text-primary py-2 px-5 mb-2">ZOBAA 建議</button>
+                  <p>別錯過傍晚在雪梨港看日落＋欣賞歌劇院夜燈 ✨</p>              
+                  <button type="button" class="btn btn-dark fw-bold py-6 px-5 mb-lg-0 rounded-pill w-100 d-flex justify-content-between">
+                    現在就飛向南半球
+                    <span class="material-icons-outlined align-bottom bg-white rounded-circle text-black">arrow_forward</span>
+                  </button>
+                </div>                
+              </div>
+            </div>
+            <div class="card rounded-5 bg-white flex-shrink-0">
+              <div class="d-lg-flex justify-content-lg-between">
+                <div>                  
+                  <img class="rounded-5 px-5 pt-5 pb-2 pb-lg-5" src="/task8/assets/map-5-BNCblw4l.png" alt="map1">                                    
+                </div>
+                <div class="card-body pt-0 py-lg-5">
+                  <div class="mb-2">
+                    <button type="button" class="btn btn-primary-10 fw-bold text-primary py-2 px-5 me-2">非洲</button>
+                    <button type="button" class="btn btn-primary-10 fw-bold text-primary py-2 px-5">埃及開羅</button>                  
+                  </div>
+                  <h3 class="fs-4 fs-lg-2 fw-bold">穿越千年時光的沙漠冒險</h3>                
+                  <p class="text-neutral-80 mb-7">乘著駱駝走過古老遺跡，抬頭仰望太陽神的光芒，在歷史與傳說之間迷失。</p>
+                  <button type="button" class="btn btn-primary-10 fw-bold text-primary py-2 px-5 mb-2">ZOBAA 建議</button>
+                  <p>建議早上 8 點前到吉薩金字塔，避開人潮與烈日 ☀️</p>              
+                  <button type="button" class="btn btn-dark fw-bold py-6 px-5 mb-lg-0 rounded-pill w-100 d-flex justify-content-between">
+                    揭開古文明的面紗
+                    <span class="material-icons-outlined align-bottom bg-white rounded-circle text-black">arrow_forward</span>
+                  </button>
+                </div>                
+              </div>
+            </div>                                   
+          </div>
+        </div>
+      </section>
+      <!-- 搜尋墨爾本嗎？ -->
+      <section class="container py-11 py-lg-16">
+        <h3 class="fs-4 fs-lg-1 fw-bold text-primary mb-7">
+          <span class="mb-2">搜尋墨爾本嗎？<br></span>
+          來點行程參考！
+        </h3>          
+        <div class="row overflow-x-auto">
+          <div class="col-lg-3 d-flex gap-7">
+            <div class="card border-0 rounded-5 bg-white flex-shrink-0 position-relative melbourne-card">                
+              <img class="rounded-5 mb-5" src="/task8/assets/journey-1-LwwSLAz4.png" alt="journey1">
+              <span class="material-icons-outlined position-absolute favorite text-white">favorite_border</span>                                  
+              <div class="card-body p-0">
+                <h3 class="fs-8 fw-bold">【獨家優惠】布萊頓彩色小屋＋森林蒸汽火車一日遊</h3> 
+                <button type="button" class="btn btn-primary-10 fw-bold text-primary py-1 px-2 mb-2 me-2">即買即用</button>
+                <button type="button" class="btn btn-primary-10 fw-bold text-primary py-1 px-2 mb-2">5 天前可免費取消</button>                                
+                <p class="pb-5 border-bottom">
+                  <span class="material-icons-outlined star align-bottom">star</span>
+                  <span class="pe-4 border-end">4.2(333)</span>
+                  <span class="ps-4">500+ 個已訂購</span>
+                </p>
+                <h6 class="fs-7 text-primary">NT$ 4,220</h6>
+                <P><del class="text-del">NT$ 5,220</del></P>
+              </div>                
+            </div>
+            <div class="card border-0 rounded-5 bg-white flex-shrink-0 position-relative melbourne-card">                
+              <img class="rounded-5 mb-5" src="/task8/assets/journey-2-rsXkoba7.png" alt="journey2">
+              <span class="material-icons-outlined position-absolute favorite text-white">favorite_border</span>                                  
+              <div class="card-body p-0">
+                <h3 class="fs-8 fw-bold">無尾熊動物園＋企鵝歸巢雙享之旅</h3> 
+                <button type="button" class="btn btn-primary-10 fw-bold text-primary py-1 px-2 mb-2 me-2">即買即用</button>
+                <button type="button" class="btn btn-primary-10 fw-bold text-primary py-1 px-2 mb-2">7 天前可免費取消</button>                                
+                <p class="pb-5 border-bottom">
+                  <span class="material-icons-outlined star align-bottom">star</span>
+                  <span class="pe-4 border-end">4.2(333)</span>
+                  <span class="ps-4">500+ 個已訂購</span>
+                </p>
+                <h6 class="fs-7 text-primary">NT$ 3,890</h6>
+                <P><del class="text-del">NT$ 4,920</del></P>
+              </div>                
+            </div>
+            <div class="card border-0 rounded-5 bg-white flex-shrink-0 position-relative melbourne-card">                
+              <img class="rounded-5 mb-5" src="/task8/assets/journey-3-Cw8zOZzr.png" alt="journey3">
+              <span class="material-icons-outlined position-absolute favorite text-white">favorite_border</span>                                  
+              <div class="card-body p-0">
+                <h3 class="fs-8 fw-bold">大洋路經典一日遊｜中文導覽！體驗澳洲最夢幻的海岸線</h3> 
+                <button type="button" class="btn btn-primary-10 fw-bold text-primary py-1 px-2 mb-2 me-2">中文導覽</button>
+                <button type="button" class="btn btn-primary-10 fw-bold text-primary py-1 px-2 mb-2">5 天前可免費取消</button>                                
+                <p class="pb-5 border-bottom">
+                  <span class="material-icons-outlined star align-bottom">star</span>
+                  <span class="pe-4 border-end">4.2(333)</span>
+                  <span class="ps-4">500+ 個已訂購</span>
+                </p>
+                <h6 class="fs-7 text-primary">NT$ 3,690</h6>
+                <P><del class="text-del">NT$ 4,500</del></P>
+              </div>                
+            </div>
+            <div class="card border-0 rounded-5 bg-white flex-shrink-0 position-relative melbourne-card">                
+              <img class="rounded-5 mb-5" src="/task8/assets/journey-4-DC33musc.png" alt="journey4">
+              <span class="material-icons-outlined position-absolute favorite text-white">favorite_border</span>                                  
+              <div class="card-body p-0">
+                <h3 class="fs-8 fw-bold">墨爾本市區導覽｜壁畫巷＋隱藏咖啡廳之旅，體驗本地咖啡文化、隱藏小巷拍照</h3> 
+                <button type="button" class="btn btn-primary-10 fw-bold text-primary py-1 px-2 mb-2 me-2">專業導覽</button>
+                <button type="button" class="btn btn-primary-10 fw-bold text-primary py-1 px-2 mb-2">3 天前可免費取消</button>                                
+                <p class="pb-5 border-bottom">
+                  <span class="material-icons-outlined star align-bottom">star</span>
+                  <span class="pe-4 border-end">4.2(333)</span>
+                  <span class="ps-4">500+ 個已訂購</span>
+                </p>
+                <h6 class="fs-7 text-primary">NT$ 1,280</h6>
+                <P><del class="text-del">NT$ 2,480</del></P>
+              </div>                
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 為什麼選擇 ZOBAA ? -->
+      <div class="bg-primary-10">
+        <section class="container py-11 py-lg-16">
+          <img class="mb-2 mb-lg-7 rounded-5" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week8/index/card.png?raw=true" alt="person pic">
+          <div class="bg-primary-10 p-7 reason d-lg-flex justify-content-lg-between">
+            <div>
+              <h5 class="mb-5 fs-5 text-primary">為什麼選擇 ZOBAA ?</h5>
+              <p class="text-neutral-80">不只是帶你抵達目的地，更在每一次出發前，替你預想所有細節。</p>
+              <p class="text-neutral-80"> ZOBΛA 希望你能放心探索世界，把記憶留給旅程本身。</p>
+              <button type="button" class="btn btn-dark d-none d-lg-block fw-bold py-6 px-5 mb-lg-0 rounded-pill  d-flex justify-content-between">
+                立即探索我們的精心旅程
+                <span class="material-icons-outlined align-bottom bg-white rounded-circle text-black ms-5">arrow_forward</span>
+              </button>                
+            </div>
+            <div class="d-flex">
+              <div class="bg-white rounded-5 p-7 mb-5 me-lg-6">
+                <h3 class="fw-bold text-primary">
+                  8 年
+                  <span class="material-icons-outlined">add</span>
+                </h3>
+                <p class="text-primary-80">旅遊企劃經驗</p>
+              </div>
+              <div class="bg-white rounded-5 p-7 mb-7">
+                <h3 class="fw-bold text-primary">
+                  30,000
+                  <span class="material-icons-outlined">add</span>
+                </h3>
+                <p class="text-primary-80">旅人五星好評</p>
+              </div>              
+            </div>           
+            <button type="button" class="btn btn-dark d-lg-none fw-bold py-6 px-5 mb-lg-0 rounded-pill w-100 d-flex justify-content-between">
+              立即探索我們的精心旅程
+              <span class="material-icons-outlined align-bottom bg-white rounded-circle text-black">arrow_forward</span>
+            </button>           
+          </div>
+
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer bg-dark px-4 py-15">
+    <div class="container d-lg-flex justify-content-lg-between align-items-lg-center">
+        <div>
+            <img class="mb-11" src="data:image/png;base64,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" alt="logo">
+            <ul class="text-white fs-8 p-0">
+                <li>
+                    <a href="#">常見問題</a>
+                </li>
+                <li>
+                    <a href="#">關於我們</a>
+                </li>
+                <li>
+                    <a href="#">隱私權政策</a>
+                </li>
+                <li>
+                    <a href="#">使用者條款</a>
+                </li>
+            </ul>        
+        </div>
+        <div>
+            <ul class="contact d-flex gap-5 p-0">
+                <li>
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM1SURBVHgBzVmxbhpBEB3cngunwa3tGqT4D7Ddo7ikCpHck7RunMY91LEUpaJ0Qo/CH9gS1IY2NFCEejOPnYXlhLmd5Qx50tPdcXs772ZvZ2eHAkXCGFPiwxkTx1PmITOR2zPmH+aYOWT2C4XCgCJQ0DRmURBQFb4443KcsYiZ164oLMtLHErbNrcbh9oMEigGa8wrZofZ1RiRPorSB8QOtEI3dVxltpk1Ebptf0Xp64F5RduAO7iRjk4pZ4jQb7BBWsBTzHtmIw+vZdi5ZTZVdrhxC+JoRxBH3Ic2xrDe0o4hIm+yGl3KN/dmw7rBdiLfZPW1BkURV6Q9AZNRIsbCQQfefcSobi6xKRJsGwG/I1qW+B+852lJfC86D0JxP2J1OGJ+Zv5mDs0SE/mtzjzR9CnLJbxY9Q2pvCfC7kRICO5IARnRtrsoIVAqHj5hPhk9njTeNHahKGGIkW1oUqFH5nvSA898V7THhDmDQOR0/ZAn8E1RnDiHivQRAjht7kF8e6GT46N3fu6dXzCf5Tcce8xr5i/mO7m/ro9NQL55phVY8c6nqXu4njA/MUfe9Qemv66HjgBmcwKBicuEcwJm7BfvGkJH3vURBUA0JQekQy9lGEP3M2U07bER2aF2eCYNTGrty2j71QsbQ+HELOOhHxcnqXYO9UBb8xUFJ8ggNEE6JgYuYqHCDhKHJoZ4RHbbGIprWv2mQjGSZ0NxzBxDIGJgOfQp/nhHZMPJDwoHvrsLeTYU2P0NIRDxRrUpYkNTZl2ea5GdPNNXmre47blSHACn2QVEJsrWqRb38WhWJ1GFImAk/cO5CzNIb7bbo1q4cAOvwms9isM8/VtcmVSSGAsTkf+t6WN98mzsbq5Ge4axVYfGuhvOi7lXEUJhsrYextZh9rntzK7XyFDvrKrg2UUJJKxOY6QuQzuCsVWF4G2Hc3dT3uqti0cNcYjejlmW33LfL0sy8GBiym+pji4l46nltNok0hciRjWrfWgJ2JVv3frYjiwBY4ZCVFf6yMzktUV0v86MzgciGGLHqSI6iJhaliN2j1hSO5othkpgSmzJMw7hx7T6N8RfsntbvMRL7N8Q/wBrWU2vqbg7mgAAAABJRU5ErkJggg==" alt="line"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALzSURBVHgBzVmxctpAEF150skFaXCLqc3En5DEPamp4sy4x7WrNK6D67hIKurQM558QTIDNdCaJhSmvuxDT5FQEt2ddIDfzBt5YLX7tLpb9taRVIQx5kwvbSWup8pjZcyv18pH5VI5V06iKJpKBUQ+xioKArrkLA3O61pFrHN2TbLDhzim7VDtlq4xnQQyYE95oRwpxz5B6KNJHxA79RVa5rirHCp7FFrXX5O+7pUXUgfq4IqOTiUwKPQzYogvkCnlrbIfImuWODfKgVccNb6DONkTmIhbV2O81hvZMyjyymb0lmtuZ6+1JHbMNdn9n0GT4ppyIGAzsmL8SdBR7nvUqHGQ2lQRGhsFf0QtGZ5D9nJa4nwWI3642bH6BHcODi718k7ZULb4cYMsYpG7rpTfNMYXscfoUc8w/cApe2rzYOrjh0McvNGNuCN2JU+2tcfMvZb6OFdfH8sMqGUGbdgk6DZcWqH3Eg7nDjbYMG0IRE83cbihIeHwysEGSdtkEGvPpbTYBL5UfpBsY9QF+s22j8BW2Ze6blbcoW+UtmrQEjvQ/MYQGKedcAior4XyWpJjwE+pCGqKj2S3qL1uIXAdsjlQXw3lJ0l2YUsqgprWEPgk2WmsDAuxC+tT2LXU8EVgbzy+oDHWS90m4ZeH7crB5kS5RAZRAzsON1Re8P+Ai0D8ws0hEPXG5VD0XcLhq4MNkpb8gLC92Vez8OAQZ9P+4e+03dpub8pvvpSs3Soyj5Vkr3Ihfu3WdvtnCk3iIWEKzfOmULNqjyWZuRwamDZM/mr/clkMPkVwhbEdPUwyhznksdM+rzHJwX1vU4VcXIxA3OY0hnMZ2RNMMlUY+NyAdA/4VLseHvWZEP84Jhu/BT8vm2SKcG+qjN8KjjCvwcykF0Ios9ZjxbCWNdcRcDq+TX8fhxVHwNihEDWmD2sn7ztEz8+Z4XxKwRC7LAzRQdTUDq84PWLuMvI5YngJLIg9ywWH8BPZ/jcEGuE5H2JW9d8QvwG9gaI2W+pRfQAAAABJRU5ErkJggg==" alt="youtube"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKtSURBVHgBzVmxbtswED0Z3pQhk7M2nm2gn1A0u9DVe3Z39tYhc905AdrNc70byCeksGc7a7wkQzSz9+KnilUSSyRlSw94kGARd09H8Xg8R+IJY8xAL30lrufKE2XMx6nyQblVbpTLKIpW4oHIZbCKgoCEXGfOeU1VRGqN65FDvsQJx8503Laqz0oC6XCkvFDOlQsXJ7TRow2IXbkK3Wc4Uc6UIwoNtdejrRvlhYRADVzS0LnUDAq9hg9xBSKlvFKO64haiZ+JcurkRwf/gDg5EhiIq6qDMa0TOTIo8rJs0Gd+cweb1j2+Y36TyXsDehTXk4aAxciM8S9AHes5ctSiltzkCfWNhD+nlhxtiJ6lJbajmEUQipeh0VOjp8rvykeTY+pig9slopjYhmuJntrYmNf4KY7gjM5w32VV8lxD9D7p5YP1053ySflHHAEtam8NbV3ZVRtepVABH6373+rki4QBC6aPbxA13VLCcWrdP0o4ELQBBOLbayy17AHqzb4UE6MrTDm+igeydIMIxlklfCDciweoKe7I4fEkAYDANGSKI0Jvv1k//4py3IoHqCmFwGfJT2NtAhbvAwTey+7Y2DacKbcQiBw4lPYBO9wGApFv2hhBBG3Z4Ym/34ZSKwO1IP2tsjSD8ibsjFovXso/3HT5AwSi5JoHJO1b6/5OPMHoYXonxQc4zY2kYbDrMH7rQVZqN7ZgSo8eZteHafLYWd6v4VQfratg+Z2Yqn0aw76MHAnsKlQ/XDHcU77VoZtHYwbE3Y/J22+1J3Gz6yLcGJ/2W8EQ+jXXXP51HE1j2kLGSMrGV20BZ+3bl/1RPNq3tIEVClEL2ijdFFyb6HafGcZXFAyx20ITHUROHfKK0yN2LKfdyklgQezAcg7hZ/L/3xAohDd8ibXv3xB/ARB6OkBbGlFOAAAAAElFTkSuQmCC" alt="fb"></a>
+                </li>
+            </ul>
+            <p class="text-white">copyright © 2025 ZOBAA 旅遊網站 All Rights Reserved.</p>        
+        </div>        
+    </div>
+
+
+</footer>
+  </body>
+</html>
