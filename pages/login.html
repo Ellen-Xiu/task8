@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">    
+    <title>index</title>
+  </head>
+  <body>
+
+    <main class="px-7 login d-flex justify-content-center justify-content-lg-between">
+      <div class="d-none d-lg-block">
+        <img class="login-pic rounded-5" src="/assets/images/cover-1.png" alt="login pic">        
+      </div>
+      <div class="login-info flex-shrink-0">
+        <h1 class="fs-4 fs-lg-h2 fw-bold mb-7">歡迎回來！</h1>
+        <form>
+          <div class="input-group mb-2 mb-lg-5">
+            <span class="input-group-text bg-white border-end-0" id="google-account"><img src="/assets/images/ic_google.png" alt="Google logo"></span>
+            <input type="text" class="form-control" placeholder="使用 Google 帳號登入" aria-label="google-account" aria-describedby="使用 Google 帳號登入">
+          </div>
+          <div class="input-group mb-2 mb-lg-5">
+            <span class="input-group-text bg-white border-end-0" id="fb-account"><img src="/assets/images/ic_facebook.png" alt="fb logo"></span>
+            <input type="text" class="form-control" placeholder="使用 Facebook 帳號登入" aria-label="fb-account" aria-describedby="使用 Facebook 帳號登入">
+          </div>
+          <div class="input-group mb-7 mb-lg-11">
+            <span class="input-group-text bg-white border-end-0" id="apple-account"><img src="/assets/images/ic_apple.png" alt="apple logo"></span>
+            <input type="text" class="form-control" placeholder="使用 Apple 帳號登入" aria-label="apple-account" aria-describedby="使用 Apple 帳號登入">
+          </div>
+          <h2 class="fs-8 fw-bold">或使用 ZOBAA 帳號登入</h2>
+          <div class="mb-3">
+            <label for="ZOBAA-email" class="form-label">
+              電子信箱<span class="text-alert">*</span>
+            </label>
+            <input type="email" class="form-control p-5" id="ZOBAA-email" placeholder="jessicadesigner@gmail.com">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">
+              密碼<span class="text-alert">*</span>
+            </label>
+            <input type="password" class="form-control p-5" id="password" placeholder="請輸入密碼">
+          </div>
+          <div class="d-flex justify-content-between mb-7">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="rememberAccount" checked>
+              <label class="form-check-label" for="rememberAccount">
+                記住帳號
+              </label>
+            </div>
+            <a href="#">忘記密碼？</a>          
+          </div>
+          <button type="button" class="btn btn-neutral-40 w-100 py-5 mb-7">立即登入</button>
+          <div class="d-flex gap-2">
+            <p class="text-neutral-80">沒有 ZOBAA 帳號嗎？</p>
+            <a href="#" class="text-primary fw-semibold">立即註冊</a>          
+          </div>
+        </form>           
+      </div>
+  
+    </main>
+
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
