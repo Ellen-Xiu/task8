@@ -1,0 +1,28 @@
+$utilities: map-merge(
+  $utilities, 
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        ( 
+          responsive: true,
+          values:
+            map-merge(
+              map-get(map-get($utilities, "font-size"), "values"),
+              (
+                1: 72px,
+                2: $h1-font-size,//h1 48
+                3: $h2-font-size,//h2 40
+                4: $h3-font-size,//h3 32
+                5: $h4-font-size,//h4 28
+                6: $h5-font-size,//h5 24
+                7: $h6-font-size,//h6 20
+                8: 16px,
+                9: 14px,
+                10: 12px,
+              )
+            ),
+        )         
+      ),
+  )
+);

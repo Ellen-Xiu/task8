@@ -1,0 +1,68 @@
+<nav class="navbar navbar-light bg-white py-4 py-lg-5 fixed-top">
+  <div class="container position-relative">
+    <div class="d-flex align-items-center me-auto">
+        <a class="navbar-brand p-0 me-lg-7 me-auto" href="index">
+            <img src="/assets/images/LOGO.png" alt="logo">
+        </a>
+        <form class="position-relative d-none d-lg-block">
+            <span class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60">search</span>
+            <input type="search" class="form-control rounded-1 py-3 ps-11 navbar-lg-search" id="navbar-lg-search" placeholder="搜尋景點、地點或城市">          
+        </form>  
+    </div>
+  
+    <div class="position-absolute z-1 start-0 end-0 px-4 bg-white"> <!-- start-0 end-0 為了滿版寬度-->
+        <div class="collapse" id="collapseExample">
+            <div class="d-flex">
+                <form class="position-relative w-100">
+                    <span class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60">search</span>
+                    <input type="search" class="form-control rounded-1 py-3 ps-11" id="exampleFormControlInput1" placeholder="搜尋景點、地點或城市">          
+                </form>
+                <button type="button" class="btn p-2 border-0" data-bs-toggle="collapse" data-bs-target="#collapseExample">
+                    <span class="material-icons-outlined align-bottom">close</span>
+                </button>              
+            </div>
+        </div>  
+    </div>
+  
+    <button type="button" class="btn border-0 p-2 d-lg-none" data-bs-toggle="collapse" data-bs-target="#collapseExample">
+        <span class="material-icons-outlined align-bottom">search</span>
+    </button>
+    <a href="#" class="btn border-0 py-2 me-lg-2">
+        <span class="position-relative">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-alert cart-tag p-0">
+                2
+            </span>        
+            <span class="material-icons-outlined align-bottom">local_grocery_store</span>
+        </span>
+    </a>
+    <button type="button" class="btn btn-primary-100 py-5 px-lg-9 d-none d-lg-block">登入 / 註冊 </button>
+
+    <button class="btn border-0 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="material-icons-outlined d-lg-none align-bottom">menu</span>
+    </button>
+    <div class="offcanvas offcanvas-end p-7" tabindex="-1" id="offcanvasNavbar" aria-labelledby="account">
+      <div class="offcanvas-header p-0 mb-7">
+        <div class="d-flex flex-column w-100">
+            <div class="align-self-end">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>           
+            </div>
+            <div class="d-flex align-items-center pb-5 border-bottom">
+                <span class="material-icons-outlined text-white rounded-circle bg-primary-40 account text-center me-2" id="account">account_circle</span>
+                <div>
+                    <p class="text-primary-100 fw-bold mb-0">訪客</p>
+                    <p class="text-neutral-80 mb-0">未登入</p>                 
+                </div>
+            </div>               
+        </div>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="d-flex flex-column h-100">
+            <h6 class="fw-bold text-primary-100">歡迎來到 ZOBAA</h6>
+            <p class="text-neutral-80">加入會員即可立即訂購、收藏行程，並享相關優惠好禮。</p>
+            <button type="button" class="btn btn-primary-100 py-5 w-100 mt-auto">登入 / 註冊 </button>                      
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>

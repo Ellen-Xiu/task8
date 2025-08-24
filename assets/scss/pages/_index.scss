@@ -1,0 +1,73 @@
+.banner {
+  background-image: url(/assets/images/hero-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding-top: 112px;
+}
+.travel-title {
+  font-size: 32px;
+}
+@media (min-width: 992px) {
+  .travel-title {
+    font-size: 72px;
+  }
+  .banner-searchBar {
+    width: 720px;
+  }
+}
+.recommend {
+  background: linear-gradient(180deg, #221F1E 0%, #221F1E 100%);
+  .card {
+    width: 277px;
+  }
+}
+@media (min-width: 992px) {
+  .recommend .card {
+    width: 25%;
+    max-width: 416px;
+    height: 600px;
+    transition: width 0.5s; /* 避免元素寬度變化太突然，目的使效果平滑一些 */
+    &:hover {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .offset-row {
+    transform: translateX(80px);
+  }
+}
+
+.map .card {
+  width: 312px;
+}
+@media (min-width: 992px) {
+  .map .card {
+    width: 100%;
+    img {
+      height: 100%;
+    }
+  }
+}
+.star {
+  color :#F6BD2B;
+}
+.text-del {
+  color: #808080;
+}
+.favorite {
+  top: 16px;
+  right: 16px;
+}
+
+.melbourne-card {
+  width: 306px;
+}
+
+.reason {
+  background: #F3EEEC80;
+  opacity: 0.5;
+}
