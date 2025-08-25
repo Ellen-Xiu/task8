@@ -29,8 +29,14 @@
     max-width: 416px;
     height: 600px;
     transition: width 0.5s; /* 避免元素寬度變化太突然，目的使效果平滑一些 */
+    .btn {
+      opacity: 0;
+    }
     &:hover {
       width: 100%;
+      .btn {
+        opacity: 1;        
+      }
     }
   }
 }
