@@ -77,3 +77,18 @@
   background: #F3EEEC80;
   opacity: 0.5;
 }
+
+@media (min-width: 992px){
+  .site-logo-img {
+    width: 290px;
+    left: 4.17%;
+    top: 56.2%;
+    z-index: 2;
+  }
+  .first-site {
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2bf9ce835c6465f064ead0300f32c1e27f630580/2025-week8/index/deco-bg.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
